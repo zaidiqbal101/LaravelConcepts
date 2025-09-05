@@ -7,7 +7,7 @@ function UserList() {
 
   return (
     <div className="p-6">
-      <h1 className="text-xl font-serif mb-4">User List</h1>
+      <h1 className="text-xl font-serif mb-4">User List Data</h1>
       <table className="table-auto border-collapse border border-gray-300 w-full">
         <thead>
           <tr className="bg-gray-200">
