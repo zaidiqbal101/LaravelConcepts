@@ -14,3 +14,5 @@ use Inertia\Inertia;
 Route::get('/',[HomeController::class,'index']);
 Route::get('/page2',[HomeController::class,'index1']);
 Route::get('/UserList',[HomeController::class,'UserList']);
+Route::delete('/users/{id}',[HomeController::class,'destroy']);
+Route::post('/users',[HomeController::class,'store']);
