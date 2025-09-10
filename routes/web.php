@@ -20,9 +20,9 @@ Route::get('/apiwala',function(){
 Route::get('/recharge', function() {
     return Inertia::render('Recharge');
 });
+Route::get('/table',function(){
+    return Inertia::render('Table');
+});
 Route::post('/recharge', [RechargeController::class, 'recharge']);
 
-    Route::get('/crud',function(){
-        return Inertia::render('CRUD');
-    });
-Route::get('/ADS',[ADSController::class,'ADS']);    
+Route::get('/ADS',[ADSController::class,'ADS']);)

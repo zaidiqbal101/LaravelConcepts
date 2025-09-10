@@ -15,6 +15,9 @@ export default function ADS() {
                         <th className="border px-4 py-2">Stock Name</th>
                         <th className="border px-4 py-2">Open Price</th>
                         <th className="border px-4 py-2">Close Price</th>
+                        <th className="border px-4 py-2">High Price</th>  
+                        <th className="border px-4 py-2">Low Price</th>  
+                        <th className="border px-4 py-2">Created At</th>                    
                     </tr>
                 </thead>
                 <tbody>
@@ -23,7 +26,10 @@ export default function ADS() {
                             <tr key={item.id}>
                                 <td className="border px-4 py-2">{item.id}</td>
                                 <td className="border px-4 py-2">{item.stock_name}</td>
-                                <td className="border px-4 py-2">{item.open_price}</td>
+                                <td className="border px-4 py-2">{item.open}</td>
+                                <td className="border px-4 py-2">{item.close}</td>
+                                <td className="border px-4 py-2">{item.high}</td>
+                                <td className="border px-4 py-2">{item.low}</td>
                                 <td className="border px-4 py-2">{item.created_at}</td>
                             </tr>
                         ))

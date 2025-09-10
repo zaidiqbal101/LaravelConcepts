@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\RechargeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ADSController;
 
 Route::get('/novatech_employees',function(){
     return response()->json([

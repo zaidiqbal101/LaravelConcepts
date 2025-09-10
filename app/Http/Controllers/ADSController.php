@@ -13,4 +13,9 @@ class ADSController extends Controller
             'data'=>$data
         ]);
     }
+    public function destroy($id){
+        $ad=ADS::findOrFail($id);
+        $ad->delete();
+        return redirect()->back()->with('success','Ads deleted successfully');
+    }
 }
