@@ -2,17 +2,14 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;     
-use App\Http\Controllers\RechargeController;     
+use App\Http\Controllers\RechargeController; 
+use App\Http\Controllers\ADSController;     
 
 use Illuminate\Foundation\Application;                                                                          
 use Illuminate\Support\Facades\Route;                                                                           
 use Inertia\Inertia;                                                                            
 
-// Route::get('/',function(){
-//     return Inertia::render('Page1');
-// });
 Route::get('/',[HomeController::class,'index']);
-Route::get('/page2',[HomeController::class,'index1']);
 Route::get('/UserList',[HomeController::class,'UserList']);
 Route::delete('/users/{id}',[HomeController::class,'destroy']);
 Route::post('/users',[HomeController::class,'store']);
@@ -24,3 +21,8 @@ Route::get('/recharge', function() {
     return Inertia::render('Recharge');
 });
 Route::post('/recharge', [RechargeController::class, 'recharge']);
+
+    Route::get('/crud',function(){
+        return Inertia::render('CRUD');
+    });
+Route::get('/ADS',[ADSController::class,'ADS']);    

@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\RechargeController;
+use App\Http\Controllers\ProductController;
 
 Route::get('/novatech_employees',function(){
     return response()->json([
@@ -37,3 +38,5 @@ Route::get('/payout',[TeamController::class,'payout']);
 });
 
 Route::post('/recharge',[RechargeController::class,'recharge']);
+
+Route::get('/product',[ProductController::class,'index']);

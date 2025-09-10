@@ -10,9 +10,6 @@ class HomeController extends Controller
    public function index(){
     return Inertia::render('Page1');
    }
-   public function index1(){
-    return Inertia::render('Page2');
-   }
    public function UserList(){
       $users=User::all();
       return Inertia::render('UserList',[
