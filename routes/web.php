@@ -25,4 +25,6 @@ Route::get('/table',function(){
 });
 Route::post('/recharge', [RechargeController::class, 'recharge']);
 
-Route::get('/ADS',[ADSController::class,'ADS']);)
+Route::get('/ADS',[ADSController::class,'ADS']);
+Route::delete('/ADS/{id}', [ADSController::class, 'destroy']);
+Route::post('/ADS',[ADSController::class,'store']);
